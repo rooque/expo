@@ -17,7 +17,7 @@
     "react-native",
     "expo",
     "expo-error-recovery",
-    "errorr-recovery"
+    "error-recovery"
   ],
   "repository": {
     "type": "git",

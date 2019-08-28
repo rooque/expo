@@ -21,7 +21,7 @@ extern NSString * const userDefaultsKey; // from EXErrorRecoveryModule
   return self;
 }
 
-- (BOOL)pushProps:(NSDictionary *)props
+- (BOOL)pushProps:(NSString *)props
 {
   NSUserDefaults *preferences = [NSUserDefaults standardUserDefaults];
   NSDictionary *errorRecoveryStore = [preferences objectForKey:userDefaultsKey];
@@ -36,12 +36,12 @@ extern NSString * const userDefaultsKey; // from EXErrorRecoveryModule
   }
 }
 
-- (NSDictionary *)popProps
+- (NSString *)popProps
 {
   NSUserDefaults *preferences = [NSUserDefaults standardUserDefaults];
   NSDictionary *errorRecoveryStore = [preferences objectForKey:userDefaultsKey];
   if (errorRecoveryStore != nil) {
-    NSDictionary *props = [errorRecoveryStore objectForKey:_experienceId];
+    NSString *props = [errorRecoveryStore objectForKey:_experienceId];
     if (props != nil) {
       NSMutableDictionary *storeWithRemovedProps = [errorRecoveryStore mutableCopy];
       [storeWithRemovedProps removeObjectForKey:_experienceId];

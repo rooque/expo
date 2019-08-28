@@ -1,6 +1,6 @@
 # expo-error-recovery
 
-`expo-error-recovery` helping you gracefully handle crashes due to fatal JavaScript errors.
+`expo-error-recovery` helps you gracefully handle crashes caused by fatal JavaScript errors.
 
 # API documentation
 

@@ -9,14 +9,10 @@ class ScopedErrorRecoveryModule(context: Context, val experienceId: ExperienceId
     mSharedPreferences.edit().putString(experienceId.get(), props).apply()
   }
 
-  override fun popProps(): Map<String, Any> {
-    with(mSharedPreferences.getString(experienceId.get(), "")) {
-      return if (isNotEmpty()) {
-        mSharedPreferences.edit().remove(experienceId.get()).apply()
-        getPropsFromString(this)
-      } else {
-        emptyMap()
-      }
+  override fun popProps(): String? {
+    return mSharedPreferences.getString(experienceId.get(), null)?.let {
+      mSharedPreferences.edit().remove(experienceId.get()).apply()
+      it
     }
   }
 }

@@ -5,8 +5,8 @@
 
 @interface EXErrorRecoveryModule : UMExportedModule
 
-- (BOOL)pushProps:(NSDictionary *)props;
+- (BOOL)pushProps:(NSString *)props;
 
-- (NSDictionary *)popProps;
+- (NSString *)popProps;
 
 @end
