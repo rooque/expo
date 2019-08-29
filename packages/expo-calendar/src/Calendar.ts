@@ -366,6 +366,13 @@ export async function updateAttendeeAsync(id: string, details: OptionalKeys<Atte
   return ExpoCalendar.saveAttendeeForEventAsync(newDetails, null);
 } // Android
 
+export async function getDefaultCalendarAsync(): Promise<Calendar> {
+  if (!ExpoCalendar.getDefaultCalendarAsync) {
+    throw new UnavailabilityError('Calendar', 'getDefaultCalendarAsync');
+  }
+  return ExpoCalendar.getDefaultCalendarAsync();
+} // iOS
+
 export async function deleteAttendeeAsync(id: string): Promise<void> {
   if (!ExpoCalendar.deleteAttendeeAsync) {
     throw new UnavailabilityError('Calendar', 'deleteAttendeeAsync');
