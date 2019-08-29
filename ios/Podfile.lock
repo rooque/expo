@@ -635,7 +635,8 @@ PODS:
   - EXWebBrowser (6.0.0):
     - UMCore
   - Fabric (1.10.1)
-  - FBAudienceNetwork (5.1.1)
+  - FBAudienceNetwork (5.5.0):
+    - FBSDKCoreKit/Basics (>= 5.2.1)
   - FBSDKCoreKit (5.4.1):
     - FBSDKCoreKit/Basics (= 5.4.1)
     - FBSDKCoreKit/Core (= 5.4.1)
@@ -1156,7 +1157,7 @@ DEPENDENCIES:
   - EXVideoThumbnails (from `../packages/expo-video-thumbnails/ios`)
   - EXWebBrowser (from `../packages/expo-web-browser/ios`)
   - Fabric (~> 1.6)
-  - FBAudienceNetwork (= 5.1.1)
+  - FBAudienceNetwork (= 5.5.0)
   - FBSDKCoreKit (~> 5.4.1)
   - FBSDKLoginKit (~> 5.4.1)
   - Folly (from `../react-native-lab/react-native/third-party-podspecs/Folly.podspec`)
@@ -1887,7 +1888,7 @@ SPEC CHECKSUMS:
   EXVideoThumbnails: 3c3b2231e6b6c19af2ac32c7b5f398b1a8948a5e
   EXWebBrowser: def838b95aa9d396f9ce71ace4e614ee16e7ee30
   Fabric: f6f21452846788bb44595d73e9909d79d328e617
-  FBAudienceNetwork: 56c2dc9b5f075f4a9757d7dc8a83d3972270f645
+  FBAudienceNetwork: 1ea26a004014ee6700dce1b7beb5e853887f498e
   FBSDKCoreKit: 5144671077d67f07d7d243dbc7fd57a171f73954
   FBSDKLoginKit: ff38b353b6843353f090028eb1b895c78aa82796
   Firebase: a2b5951f30ff38fd3b3bdae9c7d340f940fd3c51
@@ -1936,6 +1937,6 @@ SPEC CHECKSUMS:
   yogaABI33_0_0: aec4e4cfccfd36f11487aa0f2c678fe58ebf77bc
   yogaABI34_0_0: d6b988f267753a1d944343fd03668f0d194ec4bf
 
-PODFILE CHECKSUM: 5bf740893b0bba36f0e0b184016945b45af6d828
+PODFILE CHECKSUM: 547056867e6cc585b134bb5db6e077ca7305b54a
 
 COCOAPODS: 1.7.5
