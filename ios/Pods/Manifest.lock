@@ -1226,7 +1226,7 @@ DEPENDENCIES:
   - yogaABI34_0_0 (from `./versioned-react-native/ABI34_0_0/ReactCommon/ABI34_0_0yoga`)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - Amplitude-iOS
     - Analytics
     - AppAuth
@@ -1941,6 +1941,6 @@ SPEC CHECKSUMS:
   yogaABI33_0_0: aec4e4cfccfd36f11487aa0f2c678fe58ebf77bc
   yogaABI34_0_0: d6b988f267753a1d944343fd03668f0d194ec4bf
 
-PODFILE CHECKSUM: aa3912c49a4edcc5547cb795395dd5748378f287
+PODFILE CHECKSUM: b309df4ea769be5e1e97c3b9e0c429b90c4d32e6
 
 COCOAPODS: 1.8.0.beta.1
